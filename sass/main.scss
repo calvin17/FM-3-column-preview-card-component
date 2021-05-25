@@ -1,0 +1,152 @@
+// COLOR VARIABLES
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+// FONT VARIABLES
+$font-display: "Big Shoulders Display", sans-serif;
+$font-primary: "Lexend Deca", sans-serif;
+
+//GLOBAL STYLE
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: $very-light-gray;
+  font-family: $font-primary;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.card {
+  padding: 4.35rem;
+  color: #fff;
+  .car-icon {
+    width: 6rem;
+    height: 3.75rem;
+  }
+  &.sedans {
+    border-radius: 1rem 1rem 0 0;
+    background-color: $bright-orange;
+    .btn-lm {
+      color: $bright-orange;
+      &:hover {
+        background-color: $bright-orange;
+      }
+    }
+  }
+  &.suvs {
+    background-color: $dark-cyan;
+    .btn-lm {
+      color: $dark-cyan;
+      &:hover {
+        background-color: $dark-cyan;
+      }
+    }
+  }
+  &.luxury {
+    border-radius: 0 0 1rem 1rem;
+    background-color: $very-dark-cyan;
+    .btn-lm {
+      color: $very-dark-cyan;
+      &:hover {
+        background-color: $very-dark-cyan;
+      }
+    }
+  }
+  .card-title {
+    font-family: $font-display;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 2rem 0rem;
+  }
+  .card-detail {
+    color: $transparent-white;
+    line-height: 1.6;
+    padding: 1rem 0rem;
+  }
+  .btn-lm {
+    font-family: $font-primary;
+    border-radius: 3rem;
+    border: 1px solid currentColor;
+    width: 12rem;
+    padding: 1.2rem;
+
+    margin: 1rem auto;
+    cursor: pointer;
+
+    transition: all 0.5s;
+
+    &:hover {
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 746px) {
+  .container {
+    flex-direction: row;
+    max-width: 920px;
+    margin: 25rem auto;
+    min-height: 500px;
+  }
+  .card {
+    padding: 4.75rem;
+    display: flex;
+    flex-direction: column;
+    &.sedans,
+    &.suvs,
+    &.luxury {
+      border-radius: 0;
+    }
+    &.sedans {
+      border-radius: 1rem 0rem 0rem 1rem;
+    }
+    &.luxury {
+      border-radius: 0rem 1rem 1rem 0rem;
+    }
+    .card-title {
+      font-size: 3.75rem;
+      padding: 3.5rem 0rem 2.5rem 0rem;
+    }
+    .card-detail {
+      margin-bottom: auto;
+    }
+    .btn-lm {
+      font-size: 1.5rem;
+      width: 15rem;
+      padding: 1.5rem;
+      margin: 0rem;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
