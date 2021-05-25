@@ -20,7 +20,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ## Overview
 
-- [Live Demo](https://calvin17.github.io/FM-stats-preview-card-component-main/)
+- [Live Demo](https://calvin17.github.io/FM-3-column-preview-card-component/)
 
 ### The challenge
 
@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://calvin17.github.io/FM-stats-preview-card-component-main/)
+- Live Site URL: [Add live site URL here](https://calvin17.github.io/FM-3-column-preview-card-component/)
 
 ## My process
 
