@@ -104,16 +104,14 @@ body {
   }
 }
 
-/* DESKTOP */
-@media (min-width: 746px) {
+@media (min-width: 740px) {
   .container {
     flex-direction: row;
-    max-width: 920px;
+    max-width: 680px;
     margin: 10rem auto;
     min-height: 500px;
   }
   .card {
-    padding: 4.75rem;
     display: flex;
     flex-direction: column;
     &.sedans,
@@ -127,12 +125,25 @@ body {
     &.luxury {
       border-radius: 0rem 1rem 1rem 0rem;
     }
+    .card-detail {
+      margin-bottom: auto;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    flex-direction: row;
+    max-width: 920px;
+    margin: 10rem auto;
+    min-height: 500px;
+  }
+  .card {
+    padding: 4.75rem;
+
     .card-title {
       font-size: 3.75rem;
       padding: 3.5rem 0rem 2.5rem 0rem;
-    }
-    .card-detail {
-      margin-bottom: auto;
     }
     .btn-lm {
       font-size: 1.5rem;
